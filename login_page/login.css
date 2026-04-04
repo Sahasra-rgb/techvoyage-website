@@ -1,0 +1,54 @@
+
+/* LOGIN BOX */
+.login-box {
+  background: #111;
+  padding: 50px;
+  width: 420px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.05);
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+/* HOVER EFFECT (same vibe as cards) */
+.login-box:hover {
+  transform: scale(1.03);
+  border-color: rgba(0, 240, 255, 0.3);
+}
+
+/* TEXT */
+.login-box h2 {
+  margin-bottom: 10px;
+}
+
+.login-box p {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+/* INPUTS */
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+
+/* CREATE ACCOUNT */
+.create {
+  display: block;
+  margin-top: 15px;
+  color: #00f0ff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.login-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,121 @@
+/* RESET */
+
+/* SECTION */
+.pricing {
+  position: relative;
+  z-index: 1;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  color: cyan;
+  text-shadow: 0 0 20px cyan;
+}
+
+.subtitle {
+  margin-top: 10px;
+  opacity: 0.7;
+}
+
+/* MODELS (not cards 👀) */
+.models {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+/* MODEL BLOCK */
+.model {
+  width: 100%;
+  max-width: 900px;
+  padding: 30px 40px;
+  text-align: left;
+
+  border-left: 3px solid rgba(0,255,255,0.3);
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(10px);
+
+  transition: 0.3s;
+}
+
+/* HOVER */
+.model:hover {
+  border-color: cyan;
+  box-shadow: 0 0 20px rgba(0,255,255,0.2);
+  transform: translateX(10px);
+}
+
+/* HIGHLIGHT */
+.highlight {
+  border-color: cyan;
+  box-shadow: 0 0 25px rgba(0,255,255,0.3);
+}
+
+/* TEXT */
+.model h2 {
+  color: cyan;
+  margin-bottom: 10px;
+}
+
+.desc {
+  opacity: 0.75;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* LIST */
+.model ul {
+  margin-bottom: 15px;
+  padding-left: 18px;
+  font-size: 1rem;
+}
+
+.model li {
+  margin: 8px 0;
+}
+
+/* TAG */
+.tag {
+  font-size: 1.2rem;
+  opacity: 0.6;
+}
+
+/* BUTTON BASE */
+.action-btn {
+  margin-left: 50px;
+  margin-top: 20px;
+  padding: 15px 22px;
+
+  border: 1px solid cyan;
+  border-radius: 20px;
+
+  background: transparent;
+  color: cyan;
+
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* HOVER */
+.action-btn:hover {
+  background: cyan;
+  color: black;
+  box-shadow: 0 0 15px cyan;
+}
+
+/* HIGHLIGHT BUTTON */
+.highlight-btn {
+  background: cyan;
+  color: black;
+}
+
+.highlight-btn:hover {
+  background: white;
+  box-shadow: 0 0 20px cyan;
+}

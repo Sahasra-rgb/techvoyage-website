@@ -1,0 +1,111 @@
+/* RESET */
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+
+/* TIMELINE */
+.timeline {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background: #00f0ff;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+}
+
+/* STEP */
+.step {
+  width: 50%;
+  padding: 20px 40px;
+  position: relative;
+}
+
+.left { left: 0; }
+.right { left: 50%; }
+
+/* CONTENT */
+.content {
+  background: #111;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.4s;
+  overflow: hidden;
+  position: relative;
+}
+
+.content:hover {
+  transform: scale(1.05);
+  border: 1px solid #00f0ff;
+}
+
+/* EXTRA INFO */
+.extra {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.4s;
+  color: #aaa;
+}
+
+.content:hover .extra {
+  max-height: 100px;
+  opacity: 1;
+}
+
+/* DOT */
+.step::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #00f0ff;
+  border-radius: 50%;
+  top: 30px;
+  right: -10px;
+}
+
+.right::before {
+  left: -10px;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 60px;
+}
+.why {
+    
+  text-align: center;
+  padding: 60px;
+}
+
+.why-grid {
+    padding: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.why-grid div {
+  padding: 15px 25px;
+  border: 1px solid #00f0ff;
+  border-radius: 20px;
+}
+.tagline {
+    text-align: center;
+  color: #00f0ff;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+/* FOOTER */

@@ -1,0 +1,123 @@
+/* RESET */
+
+/* HERO */
+.services-hero {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-hero h2 {
+  font-size: 3.8rem;
+}
+
+.services-hero p {
+  color: #aaa;
+}
+
+/* TITLE */
+.section-title {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 2rem;
+}
+
+/* CARDS */
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #111;
+  padding: 35px;
+  border-radius: 18px;
+  width: 320px;
+  position: relative;
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-15px) scale(1.05);
+  border-color: rgba(0, 240, 255, 0.3);
+}
+
+/* BADGE */
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #00f0ff;
+  color: black;
+  padding: 4px 10px;
+  font-size: 0.7rem;
+  border-radius: 10px;
+}
+
+/* SUB SERVICES */
+.sub-services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.sub-services a {
+  text-decoration: none;
+  background: rgba(0, 240, 255, 0.1);
+  color: #00f0ff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  transition: 0.3s;
+}
+
+.sub-services a:hover {
+  background: #00f0ff;
+  color: black;
+}
+@keyframes glowPulse {
+  0% { box-shadow: 0 0 0px #00f0ff; }
+  50% { box-shadow: 0 0 20px #00f0ff; }
+  100% { box-shadow: 0 0 0px #00f0ff; }
+}
+
+.detail-box:target {
+  animation: glowPulse 0.6s ease-in-out 3;
+}
+.details {
+  padding: 80px 12%;
+}
+
+/* EACH BOX */
+.detail-box {
+  background: #111;
+  padding: 35px 40px;
+  margin-bottom: 40px;   /* 👈 spacing between boxes (key fix) */
+  border-radius: 12px;
+
+  border-left: 4px solid #00f0ff;
+}
+/* TEXT */
+.detail-box p {
+  margin-bottom: 10px;
+  line-height: 1.7;
+  color: #aaa;
+  font-size: 1.1rem;
+}
+.detail-heading {
+  margin: 60px 0 20px;
+  font-size: 1.8rem;
+  color: #00f0ff;
+}
+.detail-box h3 {
+  margin-bottom: 20px;
+  line-height: 1.3;
+  font-size: 1.3rem;
+}

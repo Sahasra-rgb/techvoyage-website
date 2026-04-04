@@ -1,0 +1,156 @@
+/* RESET */
+/* KEEP YOUR ORIGINAL RESET + BACKGROUND + CURSOR SAME */
+
+/* KEEP YOUR EXISTING BG + CURSOR + NAV */
+
+/* HERO */
+.hero {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 3rem;
+}
+
+.hero p {
+  color: #aaa;
+  margin-top: 10px;
+}
+
+/* SECTIONS */
+.section {
+  padding: 100px 20%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.section p {
+  color: #aaa;
+  line-height: 1.7;
+}
+
+/* VISUAL DIFFERENCE BETWEEN SECTIONS */
+.problem {
+  background: rgba(255,255,255,0.02);
+}
+
+.shift {
+  background: rgba(0,240,255,0.03);
+}
+
+.future {
+  background: rgba(255,255,255,0.02);
+}
+
+/* CONTAINER */
+.orb-container {
+  position: relative;
+  height: 300px;
+  max-width: 700px;
+  margin: 60px auto 0;
+}
+
+/* BASE ORB */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(0,240,255,0.25), transparent 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+/* CENTER ORB (MAIN) */
+.orb:nth-child(2) {
+  width: 150px;
+  height: 150px;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 35px rgba(0,240,255,0.35);
+}
+
+/* LEFT ORB */
+.orb:nth-child(1) {
+  width: 150px;              /* ↑ bigger */
+  height: 150px;
+  top: 130px;
+  left: calc(50% - 230px);   /* ← more space */
+}
+
+/* RIGHT ORB */
+.orb:nth-child(3) {
+  width: 150px;              /* ↑ bigger */
+  height: 150px;
+  top: 130px;
+  left: calc(50% + 90px);    /* → more space */
+}
+
+/* HOVER */
+/* HOVER */
+
+/* CENTER ORB (keep translateX) */
+.orb:nth-child(2):hover {
+  transform: translateX(-50%) scale(1.1);
+  box-shadow: 0 0 45px rgba(0,240,255,0.5);
+}
+
+/* SIDE ORBS */
+.orb:nth-child(1):hover,
+.orb:nth-child(3):hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 45px rgba(0,240,255,0.5);
+}
+/* TEXT */
+.inner {
+  text-align: center;
+  padding: 10px;
+}
+
+.inner span {
+  color: #00f0ff;
+  font-size: 0.9rem;
+}
+
+.inner p {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-top: 5px;
+  line-height: 1.4;
+}
+/* TEAM */
+.team {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.team-line {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.team-line span {
+  color: #aaa;
+  border-bottom: 1px solid #00f0ff;
+  padding-bottom: 5px;
+}
+
+.section-title {
+    margin-top: 40px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 40px;
+}

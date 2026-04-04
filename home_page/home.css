@@ -1,0 +1,127 @@
+/* RESET */
+/* HERO */
+.hero {
+  height: 90vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* vertical center */
+  align-items: center;       /* horizontal center */
+
+  text-align: center;        /* center text */
+  padding: 20px;
+}
+.hero h2 {
+  font-size: 3.5rem;
+  margin-bottom: 25px;
+  line-height: 1.4;
+}
+
+.hero p {
+  margin-bottom: 40px;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+/* BUTTONS */
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* 🔥 THIS fixes the spacing */
+  margin-top: 30px;
+}
+
+
+
+/* FEATURES */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  padding: 30px 20px;   /* reduce this (was probably 60px+) */
+  margin-top: -80px;    /* 👈 pulls it upward */
+}
+
+.feature-box {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+}
+/* SPLIT SECTIONS */
+.split-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 100px 10%;
+  gap: 50px;
+}
+
+.split-section .text {
+  max-width: 500px;
+}
+
+.split-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.split-section p {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.split-section .image img {
+  width: 400px;
+  border-radius: 12px;
+  transition: 0.4s;
+}
+
+.split-section .image img:hover {
+  transform: scale(1.05);
+}
+
+/* REVERSE */
+.reverse {
+  flex-direction: row-reverse;
+}
+.cta {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #00f0ff20, #000);
+}
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+/* PARAGRAPH */
+.split-section p {
+  font-size: 1.1rem;   /* increase size */
+  color: #aaa;         /* soft premium grey */
+  line-height: 1.6;
+}
+
+/* LIST */
+.info-list {
+  list-style: none;
+  margin: 20px 0;
+  padding-left: 0;
+}
+
+/* LIST ITEMS */
+.info-list li {
+  font-size: 1.05rem;   /* slightly smaller than paragraph */
+  color: #aaa;          /* SAME color as paragraph */
+  margin-bottom: 10px;
+
+  display: flex;        /* aligns tick + text */
+  align-items: center;
+  gap: 10px;
+}
+.tick {
+  color: #00f0ff;   /* your theme color */
+  font-weight: bold;
+}
