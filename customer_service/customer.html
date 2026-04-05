@@ -166,18 +166,15 @@
 
     <h3>AI Assistant</h3>
 
-    <div class="messages">
-
-      <p><b>You:</b> What services do you offer?</p>
-      <p><b>AI:</b> We provide industrial, cleaning, warehouse, and logistics robotics solutions.</p>
-
-      <p><b>You:</b> How does pricing work?</p>
-      <p><b>AI:</b> Pricing is flexible — project-based, monthly, or yearly depending on your needs.</p>
-
+    <!-- MESSAGES -->
+    <div class="messages" id="messages">
+      <p>Hi! 👋 How can I help you today?</p>
     </div>
 
-    <!-- fake input -->
-    <input type="text" placeholder="Ask something..." />
+    <!-- INPUT -->
+    <div class="chat-box">
+      <input type="text" id="user-input" placeholder="Ask something..." />
+    </div>
 
   </div>
 </div>
@@ -199,5 +196,6 @@
   </div>
 </div>
 <script src="../js/main.js"></script>
+<script src="../js/chatbot.js"></script>
 </body>
 </html>
