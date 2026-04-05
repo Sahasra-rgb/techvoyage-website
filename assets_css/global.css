@@ -648,3 +648,14 @@ img {
 .nav-links {
   z-index: 1000;
 }
+/* CHAT INPUT TEXT FIX */
+.ai-box input {
+  color: white;              /* text color */
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(0,240,255,0.2);
+}
+
+/* placeholder color */
+.ai-box input::placeholder {
+  color: #aaa;
+}
