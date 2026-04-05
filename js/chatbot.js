@@ -49,3 +49,60 @@ function getBotReply(text) {
 
   return "I’m not fully trained yet 😅 but I’ll help you soon!";
 }
+
+const liveInput = document.getElementById("live-input");
+const liveMessages = document.getElementById("live-messages");
+
+if (liveInput && liveMessages) {
+
+  // fake connection
+  setTimeout(() => {
+    liveMessages.innerHTML = "";
+    addAgentMsg("Hi! 👋 I'm a support agent. How can I help you?");
+  }, 1000);
+
+  liveInput.addEventListener("keypress", function(e) {
+    if (e.key === "Enter" && liveInput.value.trim() !== "") {
+
+      const text = liveInput.value;
+
+      addUserMsg(text);
+      liveInput.value = "";
+
+      // typing delay
+      setTimeout(() => {
+        addAgentMsg(getReply(text));
+      }, 1200);
+    }
+  });
+}
+
+function addUserMsg(text) {
+  const msg = document.createElement("p");
+  msg.innerHTML = "<b>You:</b> " + text;
+  liveMessages.appendChild(msg);
+}
+
+function addAgentMsg(text) {
+  const msg = document.createElement("p");
+  msg.innerHTML = "<b>Agent:</b> " + text;
+  liveMessages.appendChild(msg);
+}
+
+function getReply(text) {
+  text = text.toLowerCase();
+
+  if (text.includes("price")) {
+    return "Sure! We offer flexible pricing based on your needs.";
+  }
+
+  if (text.includes("robot")) {
+    return "We have industrial, cleaning, and warehouse robots available.";
+  }
+
+  if (text.includes("help")) {
+    return "Of course! Tell me what you need 😊";
+  }
+
+  return "Let me check that for you...";
+}

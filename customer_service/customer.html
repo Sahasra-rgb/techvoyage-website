@@ -10,14 +10,10 @@
 
 <body>
 
-<!-- BACKGROUND -->
-<div class="background-animation">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
+<!-- BACKGROUND ANIMATION -->
+  <div class="glass-bg">
+  <div class="glass-orb"></div>
+  <div class="glass-orb"></div>
 </div>
 
 <!-- NAVBAR -->
@@ -151,11 +147,13 @@
 
     <h3>Live Chat</h3>
 
-    <div class="messages">
-      <p><b>Agent:</b> Hi! How can we help you?</p>
+    <!-- MESSAGES -->
+    <div class="messages" id="live-messages">
+      <p>Connecting to agent...</p>
     </div>
 
-    <input type="text" placeholder="Type your message..." />
+    <!-- INPUT -->
+    <input type="text" id="live-input" placeholder="Type your message..." />
 
   </div>
 </div>
